@@ -1,6 +1,10 @@
 const pkg = require('./package')
 
 module.exports = {
+  // router: {
+  //   base: '/nuxt-vk/'
+  // },
+
   mode: 'universal',
 
   /*
@@ -42,7 +46,8 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy'
+    'nuxt-buefy',
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Axios module configuration

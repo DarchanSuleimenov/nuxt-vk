@@ -1,36 +1,24 @@
 <template>
   <div>
-    <nav class="navbar header has-shadow is-primary" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img src="~assets/buefy.png" alt="Buefy" height="28">
-        </a>
-
-        <div class="navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            nuxt-vk
+          </h1>
+          <h2 class="subtitle">
+            nuxtjs, buefy, axios, vk api
+          </h2>
         </div>
       </div>
-    </nav>
+    </section>
 
     <section class="main-content columns">
-  
-      <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">General</p>
-        <ul class="menu-list">
-          <li v-for="(item, key) of items" :key="key">
-            <nuxt-link :to="item.to" exact-active-class="is-active">
-              <b-icon :icon="item.icon"/> {{ item.title }}
-            </nuxt-link>
-          </li>
-        </ul>
-      </aside>
 
-      <div class="container column is-10">
+      <div class="container column is-12">
         <nuxt />
       </div>
-      
+
     </section>
   </div>
 </template>
