@@ -35,9 +35,8 @@ function sendRequest (base, path, params) {
 }
 
 function getUrlAuth (client_id, redirect_uri) {
-  // if (!redirect_uri) redirect_uri = 'https://oauth.vk.com/blank.html'
-  // if (!redirect_uri) redirect_uri = 'http://localhost:3000/'
-  if (!redirect_uri) redirect_uri = 'http://localhost:3000/auth/'
+  // if (!redirect_uri) redirect_uri = 'http://localhost:3000/auth/'
+  if (!redirect_uri) redirect_uri = 'https://darchansuleimenov.github.io/nuxt-vk/auth/'
   let path = "authorize?"
   return BASE_URL_OAUTH + path + `client_id=${client_id}` + '&scope=friends,offline' +
           `&redirect_uri=${redirect_uri}` + '&display=page' + `&v=${VERSION}` + '&response_type=token'
