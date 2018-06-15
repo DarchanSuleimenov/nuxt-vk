@@ -1,9 +1,9 @@
 const pkg = require('./package')
 
 module.exports = {
-  // router: {
-  //   base: '/nuxt-vk/'
-  // },
+  router: {
+    base: '/nuxt-vk/'
+  },
 
   mode: 'universal',
 
