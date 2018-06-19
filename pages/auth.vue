@@ -32,9 +32,8 @@ export default {
     } catch (err) {
       console.error(err)
     }
-    // window.location.href = '/'
-    window.location.href = 'https://darchansuleimenov.github.io/nuxt-vk/'
-    // this.$router.go('/')
+    // window.location.href = 'https://darchansuleimenov.github.io/nuxt-vk/'
+    this.$router.push('/')
   }
 }
 </script>
