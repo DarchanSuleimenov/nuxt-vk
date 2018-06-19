@@ -16,8 +16,8 @@
         :last-name="friend.last_name"
         :bdate="friend.bdate"
         :sex="friend.sex === 1 ? 'женский' : 'мужской'"
-        :country="friend.country.title"
-        :city="friend.city.title"
+        :country="friend.country ? friend.country.title : 'страна не указана'"
+        :city="friend.city ? friend.city.title : 'город не указан'"
         :photo="friend.photo_id"
         :has-photo="friend.has_photo == 1"
       >
